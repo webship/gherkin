@@ -1,0 +1,5 @@
+name: 'Gherkin Editor'
+type: module
+description: 'Gherkin editing interface.'
+package: Other
+core_version_requirement: '^8 || ^9'

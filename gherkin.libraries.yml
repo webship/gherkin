@@ -1,0 +1,6 @@
+editor:
+  version: VERSION
+  js:
+    js/gherkin.js: {}
+  dependencies:
+    - core/jquery
