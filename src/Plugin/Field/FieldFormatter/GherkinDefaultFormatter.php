@@ -19,6 +19,7 @@ use Drupal\Core\Field\FieldItemListInterface;
  class GherkinDefaultFormatter extends FormatterBase{
     
     public function viewElements(FieldItemListInterface $items, $langcode) {
+        
         $elements = [];
         foreach ($items as $delta => $item) {
             // Render each element as markup.
@@ -26,5 +27,5 @@ use Drupal\Core\Field\FieldItemListInterface;
           }
     
         return $elements;
-      }
+    }
  }

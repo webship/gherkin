@@ -37,4 +37,6 @@ class GherkinItem extends FieldItemBase {
         $properties['value'] = DataDefinition::create('string')
             ->setLabel(t('Gherkin Script'));
     }
+
+  
 }
