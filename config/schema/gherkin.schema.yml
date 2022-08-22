@@ -5,3 +5,6 @@ field.field_settings.gherkin_default_widget:
     size:
       type: integer
       label: 'Size'
+    theme:  
+      type: string
+      label: 'Gherkin Theme'

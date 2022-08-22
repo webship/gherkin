@@ -1,0 +1,5 @@
+gherkin.form:
+  title: 'Gherkin settings'
+  description: 'Configure settings for the Gherkin field area.'
+  route_name: gherkin.form
+  parent: 'system.admin_config_development'

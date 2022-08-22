@@ -1,1 +1,1 @@
-# Gherkin Editor
+# Gherkin Script

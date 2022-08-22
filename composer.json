@@ -1,6 +1,6 @@
 {
   "name": "drupal/gherkin",
-  "description": "Gherkin Editor",
+  "description": "Gherkin Script",
   "type": "drupal-module",
   "homepage": "https://www.drupal.org/project/gherkin",
   "license": "GPL-2.0-or-later",

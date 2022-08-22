@@ -1,5 +1,6 @@
 name: 'Gherkin Script'
 type: module
 description: 'Gherkin editing interface.'
+configure: gherkin.settings
 package: Other
 core_version_requirement: '^9 || ^10'
