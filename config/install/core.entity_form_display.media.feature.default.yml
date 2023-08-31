@@ -1,0 +1,42 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.feature.field_media_gherkin
+    - media.type.feature
+  module:
+    - text
+_core:
+  default_config_hash: HVhwa8ETugYcFxWLQxlDJLA7EqaY9EDKXfn4G9WIPWU
+id: media.feature.default
+targetEntityType: media
+bundle: feature
+mode: default
+content:
+  directory:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_media_gherkin:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  status: true
+  uid: true

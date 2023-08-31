@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Provides hook implementations for media entity link module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ *
+ * Media library add form alter to remove auto generated media name for link
+ * media type and added the description.
+ */
+// function gherkin_form_media_library_add_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+//   /** @var \Drupal\media\Entity\Media $media */
+//   if (isset($form['media']) && $media = $form_state->get('media')) {
+//     if ($media[0]->bundle() == 'gherkin') {
+//       $form["media"][0]["fields"]["name"]["widget"][0]["value"]["#default_value"] = '';
+//       $form["media"][0]["fields"]["name"]["widget"][0]["value"]["#description"] = t('Enter the text to be used as file name.');
+//     }
+//   }
+// }

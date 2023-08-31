@@ -1,7 +1,0 @@
-gherkin.form:
-  path: '/admin/config/development/gherkin'
-  defaults:
-    _form: '\Drupal\gherkin\Form\GherkinSettingForm'
-    _title: 'Gherkin settings'
-  requirements:
-    _permission: 'administer site configuration'
