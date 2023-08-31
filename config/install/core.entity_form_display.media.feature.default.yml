@@ -2,31 +2,53 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.media.feature.field_media_gherkin
+    - field.field.media.feature.field_feature
+    - field.field.media.feature.field_media_file
     - media.type.feature
   module:
+    - allowed_formats
+    - autocomplete_deluxe
+    - field_layout
+    - layout_discovery
     - text
-_core:
-  default_config_hash: HVhwa8ETugYcFxWLQxlDJLA7EqaY9EDKXfn4G9WIPWU
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: media.feature.default
 targetEntityType: media
 bundle: feature
 mode: default
 content:
   directory:
-    type: options_select
-    weight: 2
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_media_gherkin:
-    type: text_textarea
+    type: autocomplete_deluxe
     weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      autocomplete_route_name: autocomplete_deluxe.autocomplete
+      size: 60
+      selection_handler: default
+      limit: 10
+      min_length: 0
+      delimiter: ''
+      not_found_message_allow: false
+      not_found_message: "The term '@term' will be added"
+      new_terms: false
+      no_empty_message: 'No terms could be found. Please type in order to add a new term.'
+    third_party_settings: {  }
+  field_feature:
+    type: text_textarea
+    weight: 2
     region: content
     settings:
       rows: 5
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
   name:
     type: string_textfield
     weight: 0
@@ -37,6 +59,7 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_media_file: true
   path: true
   status: true
   uid: true

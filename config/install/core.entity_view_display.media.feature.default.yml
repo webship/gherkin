@@ -2,18 +2,17 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.media.feature.field_media_gherkin
+    - field.field.media.feature.field_feature
+    - field.field.media.feature.field_media_file
     - media.type.feature
   module:
     - ace_editor
-_core:
-  default_config_hash: VPQkOSA102ufp_vpbAoMjNTPnxD7Bx3XdzVdEBLCzxo
 id: media.feature.default
 targetEntityType: media
 bundle: feature
 mode: default
 content:
-  field_media_gherkin:
+  field_feature:
     type: ace_formatter
     label: hidden
     settings:
@@ -208,17 +207,11 @@ content:
         yaml: YAML
       auto_complete: true
     third_party_settings: {  }
-    weight: 1
-    region: content
-  name:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
     weight: 0
     region: content
 hidden:
   created: true
+  field_media_file: true
+  name: true
   thumbnail: true
   uid: true
