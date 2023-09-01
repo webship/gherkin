@@ -3,17 +3,18 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.media_library
-    - field.field.media.feature.field_feature
-    - field.field.media.feature.field_media_file
+    - field.field.media.feature.field_media_gherkin
     - media.type.feature
   module:
     - ace_editor
+_core:
+  default_config_hash: y29NyZxfY2tusL5NjnERoj9ogVYk2_HhygSw0jt8h0o
 id: media.feature.media_library
 targetEntityType: media
 bundle: feature
 mode: media_library
 content:
-  field_feature:
+  field_media_gherkin:
     type: ace_formatter
     label: hidden
     settings:
@@ -208,11 +209,17 @@ content:
         yaml: YAML
       auto_complete: true
     third_party_settings: {  }
+    weight: 1
+    region: content
+  name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
     weight: 0
     region: content
 hidden:
   created: true
-  field_media_file: true
-  name: true
   thumbnail: true
   uid: true
