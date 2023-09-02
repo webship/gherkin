@@ -5,5 +5,4 @@ description: 'Provides a media entity of type gherkin to add internal gherkin sc
 core_version_requirement: ^9 || ^10
 dependencies:
   - drupal:editor
-  - drupal:ace_editor
   - drupal:token_filter
