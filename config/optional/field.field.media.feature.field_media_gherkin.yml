@@ -7,8 +7,6 @@ dependencies:
     - media.type.feature
   module:
     - text
-_core:
-  default_config_hash: CNx_Y50wBUcG9q8KM-5WeaKnkA_pT2xi6JKu_4YlMhg
 id: media.feature.field_media_gherkin
 field_name: field_media_gherkin
 entity_type: media

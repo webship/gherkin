@@ -7,8 +7,6 @@ dependencies:
     - media.type.feature
   module:
     - text
-_core:
-  default_config_hash: bBeiKtoawTqbhTiPvCtaw2QbBvy9rbeLIE6D5m8Ik54
 id: media.feature.media_library
 targetEntityType: media
 bundle: feature

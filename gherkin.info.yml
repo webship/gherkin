@@ -1,10 +1,9 @@
-name: Gherkin
+name: Gherkin Script
 type: module
 package: Media
 description: 'Provides a media entity of type gherkin to add internal gherkin script.'
 core_version_requirement: ^9 || ^10
 dependencies:
-  - drupal:media_library
-  - drupal:media
+  - drupal:editor
   - drupal:ace_editor
   - drupal:token_filter

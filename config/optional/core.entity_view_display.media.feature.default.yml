@@ -6,8 +6,6 @@ dependencies:
     - media.type.feature
   module:
     - ace_editor
-_core:
-  default_config_hash: VPQkOSA102ufp_vpbAoMjNTPnxD7Bx3XdzVdEBLCzxo
 id: media.feature.default
 targetEntityType: media
 bundle: feature
@@ -26,8 +24,6 @@ content:
       print_margins: '1'
       use_wrap_mode: '1'
       show_invisibles: 0
-      _core:
-        default_config_hash: z7BcNFCDCtXwr4-Gea5wfcns2KMG9BzL96hWfZMvUDQ
       theme_list:
         cobalt: Cobalt
         ambiance: Ambiance

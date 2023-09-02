@@ -6,8 +6,6 @@ dependencies:
     - media.type.feature
   module:
     - text
-_core:
-  default_config_hash: HVhwa8ETugYcFxWLQxlDJLA7EqaY9EDKXfn4G9WIPWU
 id: media.feature.default
 targetEntityType: media
 bundle: feature
