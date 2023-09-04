@@ -4,7 +4,6 @@ dependencies:
   module:
     - ace_editor
     - media
-    - token_filter
 name: 'Gherkin Script'
 format: gherkin
 weight: -9
@@ -35,10 +34,3 @@ filters:
       allowed_view_modes: {  }
       allowed_media_types:
         feature: feature
-  token_filter:
-    id: token_filter
-    provider: token_filter
-    status: false
-    weight: 0
-    settings:
-      replace_empty: '0'
