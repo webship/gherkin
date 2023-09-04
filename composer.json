@@ -1,17 +1,29 @@
 {
-    "name": "drupal/gherkin",
-    "description": "Provides a media entity of type gherkin to add internal gherkin script.",
-    "type": "drupal-module",
-    "homepage": "https://www.drupal.org/project/gherkin",
-    "authors": [
-        {
-            "name": "webship.co",
-            "homepage": "https://www.drupal.org/webship"
-        }
-    ],
-    "support": {
-        "issues": "https://www.drupal.org/project/issues/gherkin"
-    },
-    "license": "GPL-2.0+",
-    "require": { }
+  "name": "drupal/gherkin",
+  "description": "Provides a media entity of type gherkin to add internal gherkin script.",
+  "type": "drupal-module",
+  "license": "GPL-2.0-or-later",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Webship",
+      "homepage": "http://webship.org",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "https://www.drupal.org/project/gherkin",
+    "source": "http://cgit.drupalcode.org/gherkin"
+  },
+  "repositories": {
+    "drupal": {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    }
+  },
+  "require": {
+    "drupal/core": "^9 || ^10",
+    "drupal/ace_editor": "~2.0"
+  }
 }
+  
