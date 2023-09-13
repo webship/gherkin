@@ -1,0 +1,4 @@
+gherkin-script:
+  version: VERSION
+  js:
+    js/gherkin-editor.js: {}

@@ -1,3 +1,11 @@
 <?php
 
 use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+
+function gherkin_form_node_project_form_alter(&$form, $form_state, $form_id) {
+  $form['#attached']['library'][] = 'gherkin/gherkin-script';
+}
