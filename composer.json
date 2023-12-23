@@ -1,13 +1,13 @@
 {
   "name": "drupal/gherkin",
-  "description": "Provides a media entity of type gherkin to add internal gherkin script.",
+  "description": "Provides a media entity of type gherkin to add internal gherkin script with field type widget and formatter.",
   "type": "drupal-module",
   "license": "GPL-2.0-or-later",
   "minimum-stability": "dev",
   "authors": [
     {
       "name": "Webship",
-      "homepage": "http://webship.org",
+      "homepage": "http://webship.co",
       "role": "Maintainer"
     }
   ],

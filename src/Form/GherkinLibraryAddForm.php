@@ -2,12 +2,7 @@
 
 namespace Drupal\gherkin\Form;
 
-use Drupal\Component\Utility\UrlHelper;
-use Drupal\Core\Entity\Element\EntityAutocomplete;
-use Drupal\Core\Form\FormBuilderInterface;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\Core\Url;
-use Drupal\link\LinkItemInterface;
 use Drupal\media\MediaTypeInterface;
 use Drupal\media_library\Form\AddFormBase;
 
@@ -42,9 +37,9 @@ class GherkinLibraryAddForm extends AddFormBase {
       '#element_validate' => [[static::class, 'validateUriElement']],
       '#feature_type' => $this->getSourceFieldDefinition($media_type)->getSetting('feature_type'),
     ];
-    
+
     return $form;
-   }
+  }
 
   /**
    * Returns the definition of the source field for a media type.

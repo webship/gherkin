@@ -1,8 +1,8 @@
 name: Gherkin Script
+description: Provides a media entity of type gherkin to add internal gherkin script with field type widget and formatter.
 type: module
-package: Media
-description: 'Provides a media entity of type gherkin to add internal gherkin script.'
-core_version_requirement: ^9 || ^10
+package: Cucumber
+core_version_requirement: ~9.5.0 || ~10.2.0
 dependencies:
   - drupal:editor
   - drupal:media
